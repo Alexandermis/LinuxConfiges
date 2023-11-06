@@ -1,11 +1,13 @@
-# exports
-export ZSH="$HOME/.oh-my-zsh"
-export PATH="$PATH:/home/mrx/.local/bin"
+# Configuration for Zsh
 
-# tmux autostart 
+# Export variables
+export ZSH="$HOME/.oh-my-zsh"
+export PATH="$PATH:$HOME/.local/bin"
+
+# Check if tmux is running, and start it if not
 [ -z "$TMUX" ] && exec tmux
 
-# Theme
+# Theme selection
 ZSH_THEME="bira"
 
 # Plugins
@@ -14,14 +16,13 @@ plugins=(
     zsh-autosuggestions
 )
 
-
-# source
-source $ZSH/oh-my-zsh.sh
-source ~/Repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source ~/Repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# alias
-alias ls=lsd
+# Custom Aliases
+alias ls='lsd'
 alias cat='bat --paging=never'
 
+# Initialize Oh My Zsh
+source $ZSH/oh-my-zsh.sh
 
+# Initialize additional plugins
+source $HOME/Repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source $HOME/Repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
