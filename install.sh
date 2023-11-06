@@ -13,19 +13,16 @@ cp .tmux.conf ~/.tmux.conf
 source ~/.tmux.conf
 echo ".vimrc copied"
 
-mkdir ~/Repos/
+mkdir ~/Repot/
 REPO_URL1="https://github.com/marlonrichert/zsh-autocomplete.git"
-TARGET_DIR1="$~/Repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
+TARGET_DIR1="$~/Repot/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
+git clone "$REPO_URL1" "$TARGET_DIR1"
 
 REPO_URL2="https://github.com/zsh-users/zsh-syntax-highlighting.git"
-TARGET_DIR2="$~/Repos/zsh-syntax-highlighting"
-
-REPO_URL3="https://github.com/zsh-users/zsh-syntax-highlighting.git"
-TARGET_DIR3="$~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
-
-git clone "$REPO_URL1" "$TARGET_DIR1"
+TARGET_DIR2="$~/Repot/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 git clone "$REPO_URL2" "$TARGET_DIR2"
-git clone "$REPO_URL3" "$TARGET_DIR3"
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 cp .zshrc ~/.zshrc
 source ~/.zshrc
