@@ -26,11 +26,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 mkdir -p /home/mrx/Repot
 # Clone the first repository
 REPO_URL1="https://github.com/marlonrichert/zsh-autocomplete.git"
-TARGET_DIR1="/home/mrx/Repot"
+TARGET_DIR1="/home/mrx/Repos"
 git clone "$REPO_URL1" "$TARGET_DIR1"
 # zsh syntax highlighting
 REPO_URL2="https://github.com/zsh-users/zsh-syntax-highlighting.git"
-TARGET_DIR2="/home/mrx/Repot"
+TARGET_DIR2="/home/mrx/Repos"
 git clone "$REPO_URL2" "$TARGET_DIR2"
 echo "ZSH Syntax Hightling done"
 #zshrc config
