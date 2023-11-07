@@ -35,6 +35,7 @@ git clone "$REPO_URL2" "$TARGET_DIR2"
 echo "ZSH Syntax Hightling done"
 #zshrc config
 cp .zshrc ~/.zshrc
+git clone "https://github.com/z-shell/zsh-lsd.git" "~/.oh-my-zsh/custom/plugins"
 source ~/.zshrc
 echo ".zshrc copied"
 #Set zsh as default
