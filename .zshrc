@@ -18,7 +18,7 @@ plugins=(
 
 # Custom Aliases
 alias ls='lsd'
-alias cat='bat --paging=never'
+alias cat='batcat --paging=never'
 
 # Initialize Oh My Zsh
 source $ZSH/oh-my-zsh.sh
