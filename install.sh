@@ -1,6 +1,16 @@
 #!/bin/bash
 sed -i 's/\r$//' install.sh
 current_folder=$(pwd)
+if [ -e /etc/os-release ]; then
+    # Get the OS name from the file
+    os_name=$(cat /etc/os-release | grep -oP '(?<=PRETTY_NAME=")([^"]+)')
+    
+    # Print the OS name
+    echo "Operating System: $os_name"
+else
+    echo "Unable to determine the operating system name."
+fi
+
 
 # oh my gosh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
