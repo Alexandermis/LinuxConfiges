@@ -1,7 +1,12 @@
 #!/bin/bash
 sed -i 's/\r$//' install.sh
 current_folder=$(pwd)
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# oh my gosh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+#gdb gef
+bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 sudo apt update
 sudo apt install -y tmux vim zsh git bat
 
