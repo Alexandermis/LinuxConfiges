@@ -23,6 +23,3 @@ set noswapfile                " Disable swap files"
 
 set mouse=a                   " Enable mouse support in all modes"
 set cursorline                " Highlight the current line"
-
-set spelllang=en              " Set spell check languages to English and German"
-set spell                     " Enable spell checking"
