@@ -19,6 +19,7 @@ plugins=(
 # Custom Aliases
 alias ls='lsd'
 alias cat='batcat --paging=never'
+alias python='python3'
 
 # Initialize Oh My Zsh
 source $ZSH/oh-my-zsh.sh
