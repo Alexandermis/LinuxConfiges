@@ -5,18 +5,20 @@ if [ -e /etc/os-release ]; then
     os_name=$(cat /etc/os-release | grep -oP '(?<=PRETTY_NAME=")([^"]+)')
     echo "Operating System: $os_name"
 fi
-# oh my gosh
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-# gdb gef
-# bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 #update and install
 sudo apt update
 sudo apt install -y tmux vim zsh git bat
-#fix bat
 mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
 #install lsd
 snap install lsd
+# for virtualbox
+# sudo apt install build-essential dkms linux-headers-$(uname -r)
+# oh my gosh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# gdb gef
+# bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
+#fix bat
 #vimrc
 cp .vimrc ~/.vimrc
 source ~/.vimrc
