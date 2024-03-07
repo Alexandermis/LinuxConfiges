@@ -7,13 +7,12 @@ if [ -e /etc/os-release ]; then
 fi
 # update and install
 sudo apt update
+sudo apt upgrade -y
 # for virtualbox
-#sudo apt install build-essential dkms linux-headers-$(uname -r)
+#sudo apt install build-essential dkms linux-headers-$(uname -r) -y
 # and Guest Additions
-sudo apt install -y tmux vim zsh git bat
-# fix bat
-mkdir -p ~/.local/bin
-ln -s /usr/bin/batcat ~/.local/bin/bat
+# set vram to 256
+sudo apt install -y tmux vim zsh git 
 # install lsd
 snap install lsd
 # oh my gosh
