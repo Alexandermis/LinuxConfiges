@@ -12,7 +12,9 @@ sudo apt upgrade -y
 #sudo apt install build-essential dkms linux-headers-$(uname -r) -y
 # and Guest Additions
 # set vram to 256
-sudo apt install -y tmux vim zsh git 
+sudo apt install -y tmux vim zsh git bat
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
 # install lsd
 snap install lsd
 # oh my gosh
@@ -31,15 +33,18 @@ echo ".vimrc copied"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # zsh autocomplete
 mkdir ~/Repos
+cd ~/Repos
 # Clone the first repository
-sudo git clone https://github.com/marlonrichert/zsh-autocomplete.git ~/Repos
+sudo git clone https://github.com/marlonrichert/zsh-autocomplete.git
 # zsh syntax highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/Repos
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "ZSH Syntax highlighting done"
+cd ~/LinuxConfiges
 #zshrc config
 cp .zshrc ~/.zshrc
 git clone "https://github.com/z-shell/zsh-lsd.git" "~/.oh-my-zsh/custom/plugins"
 source ~/.zshrc
 echo ".zshrc copied"
 #Set zsh as default
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh) $USER
+reboot now
