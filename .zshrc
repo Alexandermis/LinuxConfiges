@@ -23,8 +23,8 @@ alias python='python3'
 alias c='cd'
 
 # Initialize Oh My Zsh
-source $ZSH/oh-my-zsh.sh
+source $~/ZSH/oh-my-zsh.sh
 
 # Initialize additional plugins
-source $HOME/Repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source $HOME/Repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $~/Repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source $~/Repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
