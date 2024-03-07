@@ -8,7 +8,7 @@ fi
 # oh my gosh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # gdb gef
-bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
+# bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 #update and install
 sudo apt update
 sudo apt install -y tmux vim zsh git bat
