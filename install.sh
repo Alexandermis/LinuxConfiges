@@ -43,6 +43,8 @@ cd ~/LinuxConfiges
 #zshrc config
 cp .zshrc ~/.zshrc
 git clone "https://github.com/z-shell/zsh-lsd.git" "~/.oh-my-zsh/custom/plugins"
+#fix lsd
+echo alias ls='lsd' >> ~/.zshrc
 source ~/.zshrc
 echo ".zshrc copied"
 #Set zsh as default
