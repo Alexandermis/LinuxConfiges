@@ -18,7 +18,7 @@ plugins=(
 
 # Custom Aliases
 alias ls='lsd'
-alias cat='batcat --paging=never'
+alias cat='bat --paging=never'
 alias python='python3'
 alias c='cd'
 
