@@ -15,6 +15,8 @@ plugins=(
     git
     zsh-autosuggestions
 )
+# Zeitstempel
+HIST_STAMPS="dd.mm.yyyy"
 
 # Custom Aliases
 alias cat='bat --paging=never'
