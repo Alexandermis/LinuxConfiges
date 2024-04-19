@@ -9,10 +9,13 @@ fi
 sudo apt update
 sudo apt upgrade -y
 # for virtualbox
-#sudo apt install build-essential dkms linux-headers-$(uname -r) -y
+# sudo apt install build-essential dkms linux-headers-$(uname -r) -y
 # and Guest Additions
 # set vram to 256
 sudo apt install -y tmux vim zsh git bat
+# SSH
+# sudo apt-get install openssh-server
+# sudo service sshd start
 mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
 # install lsd
