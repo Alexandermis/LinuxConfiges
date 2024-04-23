@@ -20,7 +20,7 @@ ln -s /usr/bin/batcat ~/.local/bin/bat
 # install lsd
 snap install lsd
 # oh my gosh
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -Y
+yes | sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # gdb gef
 # bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 #vimrc
