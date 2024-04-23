@@ -6,8 +6,7 @@ if [ -e /etc/os-release ]; then
     echo "Operating System: $os_name"
 fi
 # update and install
-sudo apt update
-sudo apt upgrade -y
+sudo apt-get update && apt-get upgrade -y
 # for virtualbox
 # sudo apt install build-essential dkms linux-headers-$(uname -r) -y
 # and Guest Additions
