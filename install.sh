@@ -4,21 +4,34 @@ current_folder=$(pwd)
 if [ -e /etc/os-release ]; then
     os_name=$(cat /etc/os-release | grep -oP '(?<=PRETTY_NAME=")([^"]+)')
     echo "Operating System: $os_name"
+     case $os_name in
+    
+      "Debian GNU/Linux 12 (bookworm)")
+        sudo apt install lsd;
+        ;;
+        Ubuntu)
+        sudo snap install lsd;
+        ;; 
+    
+      *)
+        STATEMENTS
+        ;;
+    esac
+
 fi
+
 # update and install
 sudo apt-get update && apt-get upgrade -y
 # for virtualbox
 # sudo apt install build-essential dkms linux-headers-$(uname -r) -y
 # and Guest Additions
 # set vram to 256
-sudo apt install -y tmux vim zsh git bat
+sudo apt install -y tmux vim zsh git bat curl git
 # SSH
 # sudo apt-get install openssh-server
 # sudo service sshd start
 mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
-# install lsd
-snap install lsd
 # oh my gosh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
 # gdb gef
