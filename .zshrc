@@ -22,6 +22,8 @@ HIST_STAMPS="dd.mm.yyyy"
 alias cat='bat --paging=never'
 alias python='python3'
 alias c='cd'
+alias v='vim &1'
+alias cl='cd &1 && ls'
 
 # Initialize Oh My Zsh
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
