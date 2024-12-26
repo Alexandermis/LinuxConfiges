@@ -12,9 +12,8 @@ if [ -e /etc/os-release ]; then
         Ubuntu)
         sudo snap install lsd;
         ;; 
-    
       *)
-        STATEMENTS
+        echo "Do nothing"
         ;;
     esac
 
@@ -64,7 +63,12 @@ source ~/.zshrc
 echo ".zshrc copied"
 #Set zsh as default
 sudo chsh -s $(which zsh) $USER
-reboot now
+echo zsh >> ~/.basrc
+echo tmux >> ~/.basrc
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+# https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip
+
+
 # https://github.com/romkatv/powerlevel10k#is-it-really-fast
 history -p
+reboot now
