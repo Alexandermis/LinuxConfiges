@@ -12,7 +12,7 @@ set incsearch			" Show incremental search results"
 set showcmd			" Show the current command at the bottom right"
 
 set showmatch			" Highlight matching parentheses/braces"
-set history=2000		" Increase command-line history z= Spell checking menu ]s next misspelled word [s previous word"
+set history=2000		" Increase command-line history" 
 
 set nobackup			" Don't create backup files"
 set nowritebackup		" Don't create backup files when writing"
