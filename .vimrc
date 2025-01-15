@@ -1,7 +1,7 @@
 set relativenumber		" Display line numbers relative to the current line"
 set ignorecase			" Ignore case when searching"
 set hlsearch			" Highlight search results"
-syntax on			" Enable syntax highlight"
+syntax on				" Enable syntax highlight"
 set smartcase			" Use case-sensitive search if a capital letter is in the search"
 colorscheme desert
 
@@ -31,12 +31,13 @@ set listchars=tab:»·,trail:·,extends:>,precedes:<,eol:$
 
 set undofile
 set undodir=$HOME/.vim/undo
-set undolevels=1000		" Increase the amount of undoes "
+set undolevels=1000		" Increase the amount of undoes"
 
-set wildmenu			"Auto complete for the menu access it with TAB"
+set wildmenu			" Auto complete for the menu access it with TAB"
 
 
 set laststatus=2		" See things like the current file"
 set completeopt=menuone	" Shows in the insert mode with CTRL the completion menu"
 
-set tabstop=4			" Tabs look smallat "
+set tabstop=4			" Tabs look smaller set shiftwidth=4" 
+set softtabstop=4
