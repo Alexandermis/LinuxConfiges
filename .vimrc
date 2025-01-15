@@ -39,4 +39,4 @@ set wildmenu			"Auto complete for the menu access it with TAB"
 set laststatus=2		" See things like the current file"
 set completeopt=menuone	" Shows in the insert mode with CTRL the completion menu"
 
-set tabstop=4			" Tabs look smallat
+set tabstop=4			" Tabs look smallat "
