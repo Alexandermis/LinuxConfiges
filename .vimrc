@@ -57,8 +57,23 @@ endif
 ""                               G go to last line
 "" "ay                           yank to register a
 "" "+y                           yank to system clipboard
+"" 0                             go to the begining of the line (to the zero chars)
 "" $                             go to the end of the line
-"" 0                             go to the begining of the line
+"" d$                            delete to the end of the line
+
+
+" Command Count Motion
+"" f(                            go forward to the char you want here (
+"" F(                            go backwards to the char you want
+"" t(                            go forward before the car you want here (
+"" T(                            go backward to the char you want
+"" ;                             goes forward 
+"" ,                             goes backwards
+"" df(                           delete everything to the char you want (  
+"" yf(                           yank everything you want to the char you define
+"" vf(                           highlight everything to the char you define
+
+
 "" *                             match all of the words under the curser afterwards shifft + n or shift + N (back to the prev or next word)
 "" c+i+w                         change the word under my curser
 "" :%s/wordToChange/newWord/g    change all the word to the new word
