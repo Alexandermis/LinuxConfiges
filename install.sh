@@ -32,7 +32,7 @@ sudo apt install -y tmux vim zsh git bat curl git
 mkdir -p ~/.local/bin
 ln -s /usr/bin/batcat ~/.local/bin/bat
 # oh my gosh
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
 # gdb gef
 # bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 #vimrc
@@ -44,19 +44,23 @@ cp .tmux.conf ~/.tmux.conf
 source ~/.tmux.conf
 echo ".vimrc copied"
 # zsh autosuggetstions
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # zsh autocomplete
+mkdir ~/Repos
+cd ~/Repos
 # Clone the first repository
-git clone https://github.com/marlonrichert/zsh-autocomplete.git ~/.oh-my-zsh/custom/plugins/zsh-autocomplete
+sudo git clone https://github.com/marlonrichert/zsh-autocomplete.git
 # zsh syntax highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "ZSH Syntax highlighting done"
 cd ~/LinuxConfiges
 #zshrc config
 cp .zshrc ~/.zshrc
 git clone "https://github.com/z-shell/zsh-lsd.git" "~/.oh-my-zsh/custom/plugins"
 #fix lsd
-#echo alias ls='lsd' >> ~/.zshrc
+echo alias ls='lsd' >> ~/.zshrc
 source ~/.zshrc
+echo ".zshrc copied"
 #Set zsh as default
 sudo chsh -s $(which zsh) $USER
 echo zsh >> ~/.basrc
