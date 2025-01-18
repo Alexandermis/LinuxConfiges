@@ -36,8 +36,11 @@ set wildmenu			" Auto complete for the menu access it with TAB"
 set laststatus=2		" See things like the current file"
 set completeopt=menuone		" Shows in the insert mode with CTRL the completion menu"
 
-"set expandtab
-"set tabstop=4
-"set shiftwidth=4
+set expandtab
+set tabstop=4
+set shiftwidth=4
 set list
 set listchars=tab:»·,trail:·,extends:>,precedes:<,eol:$
+
+vnoremap <C-c> "+y
+map <C-v> "+p
