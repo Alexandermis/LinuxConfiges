@@ -1,5 +1,5 @@
 # Configuration for Zsh
-
+tmux
 # Export variables
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:$HOME/.local/bin"
@@ -19,7 +19,7 @@ plugins=(
 HIST_STAMPS="dd.mm.yyyy"
 
 # Custom Aliases
-alias cat='bat --paging=never'
+#alias cat='bat --paging=never'
 alias python='python3'
 alias c='cd'
 alias v='vim &1'
@@ -29,5 +29,5 @@ alias cl='cd &1 && ls'
 source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
 # Initialize additional plugins
-source $HOME/Repos/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source $HOME/Repos/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.oh-my-zsh/custom/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source $HOME/.oh-my-zsh/custom/plugins/zsh-highlighting/zsh-syntax-highlighting.zsh
