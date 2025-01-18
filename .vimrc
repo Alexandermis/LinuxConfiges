@@ -42,5 +42,5 @@ set shiftwidth=4
 set list
 set listchars=tab:»·,trail:·,extends:>,precedes:<,eol:$
 
-vnoremap <C-c> "+y
-map <C-v> "+p
+vnoremap <C-c> "+y  " copy to system clipboard with ctrl + c
+map <C-v> "+P       " paste from clipboars with ctrl + v
