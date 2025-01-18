@@ -44,3 +44,29 @@ set listchars=tab:»·,trail:·,extends:>,precedes:<,eol:$
 
 vnoremap <C-c> "+y  " copy to system clipboard with ctrl + c
 map <C-v> "+P       " paste from clipboars with ctrl + v
+
+set warp            " warp text that extends beyond the screen length
+set encoding=utf-8  " set file encoding
+
+if filereadable(expand("~/.vimrc.plug)"))
+    source ~/.vimrc.plug
+endif
+
+" Hotkeys
+""                               gg first line
+""                               G go to last line
+"" "ay                           yank to register a
+"" "+y                           yank to system clipboard
+"" $                             go to the end of the line
+"" 0                             go to the begining of the line
+"" *                             match all of the words under the curser afterwards shifft + n or shift + N (back to the prev or next word)
+"" c+i+w                         change the word under my curser
+"" :%s/wordToChange/newWord/g    change all the word to the new word
+"" :%s/wordToChange/newWord/gc   change all words but ask me for each
+"" y+i+w                         visual highlight in word
+"" :reg                          show registers
+
+" Makros
+"" q+register                     start and end a macro
+"" @+register                     replay macro  
+"" 5@+register                    replay 5 time the macro
