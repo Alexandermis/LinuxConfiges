@@ -4,7 +4,6 @@ set hlsearch			" Highlight search results"
 syntax on			" Enable syntax highlight"
 set smartcase			" Use case-sensitive search if a capital letter is in the search"
 colorscheme desert
-colorscheme gruvbox
 
 set smartindent			" Enable smart indentation"
 set autoindent			" Enable auto-indentation"
@@ -15,7 +14,6 @@ set showcmd			" Show the current command at the bottom right"
 set showmatch			" Highlight matching parentheses/braces"
 set history=2000		" Increase command-line history" 
 
-" Optimize undo
 set nobackup			" Don't create backup files"
 set nowritebackup		" Don't create backup files when writing"
 set noswapfile			" Disable swap files"
@@ -31,11 +29,9 @@ set spelllang=en
 set cursorline
 set scrolloff=4
 
-
 set wildmenu			" Auto complete for the menu access it with TAB"
 
-
-set laststatus=2		" See things like the current file"
+set laststatus=2		" Improved statusbar file"
 set completeopt=menuone		" Shows in the insert mode with CTRL the completion menu"
 
 set expandtab
