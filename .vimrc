@@ -50,7 +50,17 @@ if filereadable(expand("~/.vimrc.plug)"))
     source ~/.vimrc.plug
 endif
 
+
 " Hotkeys
+" Netrw
+"" :Ex                    Open netrw
+"" u                      Navigate one folder higher in the netrw
+"" t                      Open new tab
+"" R                      Rename file
+"" %filename              Create file
+"" dDirectoryname         Crate directory
+
+
 "" gg                     Go to the first line
 "" G                      Go to last line
 "" "ay                    Yank to register a
