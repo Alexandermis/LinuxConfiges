@@ -60,6 +60,9 @@ endif
 "" 0                             go to the begining of the line (to the zero chars)
 "" $                             go to the end of the line
 "" d$                            delete to the end of the line
+"" ZZ                            Quit vim and save IF changes are made
+"" ZQ                            Quit and dont save
+"" I#                            Comment current line out with #
 
 
 " Command Count Motion
