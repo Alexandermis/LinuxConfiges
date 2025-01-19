@@ -4,6 +4,7 @@ set hlsearch			" Highlight search results"
 syntax on			" Enable syntax highlight"
 set smartcase			" Use case-sensitive search if a capital letter is in the search"
 colorscheme desert
+colorscheme gruvbox
 
 set smartindent			" Enable smart indentation"
 set autoindent			" Enable auto-indentation"
@@ -14,9 +15,13 @@ set showcmd			" Show the current command at the bottom right"
 set showmatch			" Highlight matching parentheses/braces"
 set history=2000		" Increase command-line history" 
 
+" Optimize undo
 set nobackup			" Don't create backup files"
 set nowritebackup		" Don't create backup files when writing"
 set noswapfile			" Disable swap files"
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=1000		" Increase the amount of undoes"
 
 set mouse=a			" Enable mouse support in all modes"
 
@@ -26,9 +31,6 @@ set spelllang=en
 set cursorline
 set scrolloff=4
 
-set undofile
-set undodir=$HOME/.vim/undo
-set undolevels=1000		" Increase the amount of undoes"
 
 set wildmenu			" Auto complete for the menu access it with TAB"
 
@@ -45,7 +47,7 @@ set listchars=tab:»·,trail:·,extends:>,precedes:<,eol:$
 vnoremap <C-c> "+y  " copy to system clipboard with ctrl + c
 map <C-v> "+P       " paste from clipboars with ctrl + v
 
-set warp            " warp text that extends beyond the screen length
+set wrap            " warp text that extends beyond the screen length
 set encoding=utf-8  " set file encoding
 
 if filereadable(expand("~/.vimrc.plug)"))
